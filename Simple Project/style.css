@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --white: var(#fff);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #8c90ff;
+  margin: 1rem auto;
+  height: 100vh;
+  width: 100%;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  margin: 20px 5px;
+  border-radius: 50%;
+}
+.btn-red {
+  background-color: #fd6a6e;
+}
+.btn-yellow {
+  background-color: #fac46d;
+}
+.btn-green {
+  background-color: #54d843;
+}
+.main-box {
+  background-color: #2a2e3f;
+  width: 25rem;
+  height: 20rem;
+  border-radius: 25px;
+  padding: 0.8rem;
+}
+.nav-bar {
+  background-color: #0072fe;
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 25px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.content-box {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 0.5rem;
+}
+.sidebar {
+  background-color: #01ffff;
+  padding: 1rem;
+  grid-template-areas: ;
+}
+.main-content {
+  background-color: #fff;
+  padding: 1rem;
+}
+.footer {
+  background-color: #9ca1a2;
+  padding: 1rem;
+}
