@@ -51,31 +51,41 @@ button {
   border-radius: 25px;
   padding: 0.8rem;
 }
+
+.content-box {
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "nav-bar nav-bar"
+    "sidebar main-content"
+    "sidebar footer";
+  gap: 0.5rem;
+  font-size: 25px;
+  height: 80%;
+}
 .nav-bar {
   background-color: #0072fe;
   color: #fff;
-  padding: 0.8rem;
-  font-size: 25px;
+  padding: 1rem;
   border-radius: 5px;
-  text-align: center;
-  margin-bottom: 0.5rem;
+  grid-area: nav-bar;
 }
-.content-box {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 2fr;
-  gap: 0.5rem;
-}
+
 .sidebar {
   background-color: #01ffff;
   padding: 1rem;
-  grid-template-areas: ;
+  border-radius: 5px;
+  grid-area: sidebar;
 }
 .main-content {
   background-color: #fff;
   padding: 1rem;
+  border-radius: 5px;
+  grid-area: main-content;
 }
 .footer {
   background-color: #9ca1a2;
   padding: 1rem;
+  border-radius: 5px;
+  grid-area: footer;
 }
